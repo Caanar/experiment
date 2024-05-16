@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rp-poetry"
+version = "0.1.0"
+description = ""
+authors = ["AcidCaanar <camilo.arrieta@acidlabs.com>"]
+readme = "README.md"
+packages = [{include = "rp_poetry", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
